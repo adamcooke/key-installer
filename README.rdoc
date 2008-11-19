@@ -1,0 +1,25 @@
+= SSH Key Installation
+
+A tiny script to copy your SSH public keys from your local machine to 
+a remote server. It'll search your .ssh/ folder for known public keys
+and if it finds one, it'll add it to the remote authorized_keys file.
+
+== Install
+
+gem sources -a http://gems.github.com
+sudo gem install adamcooke-key-installer
+
+== Usage
+
+Install the default public key to a server called myserver.com for a
+user called 'dave'
+
+  install-key dave@myserver.com
+
+Install a key from /home/user/my_key.pub to a server
+
+  install-key phil@anotherserver.com --key /home/user/my_key.pub
+
+Install default keys to a server running an un-standard SSH port
+
+  install-key sarah@mylittlebox.com -p 12345
