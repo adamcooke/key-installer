@@ -4,7 +4,7 @@ Gem::Specification.new do |s|
   s.platform = Gem::Platform::RUBY
   s.summary = "Tiny utility to install SSH keys onto remote machines"
  
-   s.files = Dir.glob("{bin,lib}/**/*")
+   s.files = ['bin/install-key', 'lib/key_installer.rb', 'README.rdoc']
    s.require_path = 'lib'
    s.has_rdoc = false
  
