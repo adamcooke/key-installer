@@ -6,8 +6,8 @@ and if it finds one, it'll add it to the remote authorized_keys file.
 
 == Install
 
-gem sources -a http://gems.github.com
-sudo gem install adamcooke-key-installer
+  gem sources -a http://gems.github.com
+  sudo gem install adamcooke-key-installer
 
 == Usage
 
